@@ -5,19 +5,22 @@ body {
   min-height: 100vh;
 }
 
+.loading {
+  height: 50px;
+  width: 50px;
+  border: 6px solid black;
+  border-top: 6px solid grey;
+  border-radius: 50%;
 
+  animation: spin 1s linear infinite;
+}
 
 @keyframes spin {
   0% {
-
-  }
-
-  50% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 
   100% {
-    background-color: yellow;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
