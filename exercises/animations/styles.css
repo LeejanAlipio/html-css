@@ -5,20 +5,19 @@ body {
   min-height: 100vh;
 }
 
-.button {
-  padding: 1.3rem;
-  text-align: center;
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 0.5px solid grey;
-  transition: background-color 1s, color 1s;
-}
 
-.button:hover {
-  background-color: white;
-  color: black;
-  cursor: pointer;
+
+@keyframes spin {
+  0% {
+
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  100% {
+    background-color: yellow;
+    transform: rotate(180deg);
+  }
 }
